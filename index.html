@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Meu Portfólio</title>
+  <style>
+    /* Reset CSS básico para remover margens e preenchimentos padrão */
+    html, body, header, main, section, footer {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center; /* Centraliza o conteúdo do header */
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin-top: 20px; /* Adicionando espaço entre o título e o menu de navegação */
+      display: flex; /* Transforma a nav em um flex container */
+      justify-content: center; /* Centraliza os itens horizontalmente */
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid white;
+    }
+
+    section {
+      padding: 40px;
+    }
+
+    #about {
+      text-align: center; /* Centraliza o conteúdo dentro da seção #about */
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .project {
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .project h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    /* Estilo do formulário de contato */
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #444;
+    }
+    
+    #contact{
+    	padding-left:450px;
+    	padding-right:450px;
+    }
+
+    /* Estilo do rodapé */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    
+    /* Estilo dos ícones das redes sociais */
+    .social-icons {
+      text-align: center;
+      /*margin-top: 40px;*/
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      /*color: #2ec27e;*/
+      font-size: 40px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meu Portfólio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>Sobre Mim</h2>
+    <p>Coloque aqui uma breve descrição sobre você.</p>
+  </section>
+
+  <section id="projects">
+    <h2 style="text-align: center;">Projetos</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <h3>Título do Projeto 1</h3>
+        <p>Descrição do projeto 1.</p>
+      </div>
+      <div class="project">
+        <h3>Título do Projeto 2</h3>
+        <p>Descrição do projeto 2.</p>
+      </div>
+      <div class="project">
+        <h3>Título do Projeto 3</h3>
+        <p>Descrição do projeto 3.</p>
+      </div>
+      <div class="project">
+        <h3>Título do Projeto 4</h3>
+        <p>Descrição do projeto 4.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contato</h2>
+    <p>Se você deseja entrar em contato, utilize o formulário abaixo:</p>
+    <form>
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  
+  <!-- Nova seção com links das redes sociais -->
+  <section class="social-icons">
+    <a href="#" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-whatsapp" style="color: #2ec27e;"></i>
+    </a>
+    <a href="#" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-linkedin" style="color: #0e76a8;"></i>
+    </a>
+    <a href="#" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-github" style="color: #77767b;"></i>
+    </a>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
+  </footer>
+    <script src="https://kit.fontawesome.com/db116da2aa.js" crossorigin="anonymous"></script>
+</body>
+</html>
